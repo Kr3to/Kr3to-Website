@@ -1,14 +1,15 @@
+/* basic stuff */
 :root {
-    --ff-primary: ;
-    --ff-secondary: ;
+    --ff-primary: 'Kanit', sans-serif;
+    --ff-secondary: 'Anton', sans-serif;;
 
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --first-color: #C2DED1;
-    --second-color: #ECE5C7;
-    --third-color: #CDC2AE;
-    --text-color: #303030;
+    --first-color: #1B2430;
+    --second-color: #51557E;
+    --third-color: #816797;
+    --text-color: #D6D5A8;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -21,6 +22,61 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:  var(--second-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--third-color);
+}
+
+::-webkit-scrollbar-track-piece{
+  background: var(--first-color); 
+}
+
+body{
+  background-color: var(--first-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3{
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1{
+  font-size: var(--fs-h1);
+}
+
+h2{
+  font-size: var(--fs-h2);
+}
+
+h3{
+  font-size: var(--fs-h3);
+}
+
+/* header */
+
 header{
   background-image: url("main.jpg");
   background-size: cover;
@@ -28,25 +84,87 @@ header{
   background-attachment: fixed;
   background-position: center;
   text-align: center;
-  color: var(--third-color);
-}
-
-.header__content{
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-  text-align: center;
+  padding: 25rem 0;
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  margin: auto;
 }
 
 .header__theme{
-  font-size: 6rem;
   font-weight: var(--fw-bold);
+  text-shadow: 3px 3px 5px #000000;
 }
 
-@media all and (max-width: 600px){
-  .header__content{
-    padding: 3rem;
+.mateusz{
+  color: var(--third-color);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-reg);
+}
+
+/* about */
+
+#about{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-shadow: 3px 3px 5px #000000;
+}
+
+.who{
+  padding: 2rem;
+}
+
+.who__text{
+  font-size: 1.25vw;
+  line-height: 1.8;
+  text-align: left
+}
+
+.comp{
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.about__content{
+  padding: 3rem;
+  flex: 1;
+} 
+
+/* media */
+
+@media all and (max-width: 768px){
+
+  :root{
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
   }
+  
+  header{
+    padding: 2.5rem;
+  }
+
   .header__theme{
-    font-size: 3.6rem;
+    line-height: 1;
+    font-size: var(--fs-h2);
+  }
+
+  #about{
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .who{
+    font-size: 4rem;
+  }
+
+  .who__text{
+    text-align: justify;
+    font-size: var(--fs-body);
   }
 }
