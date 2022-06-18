@@ -1,25 +1,25 @@
 /* basic stuff */
 :root {
-    --ff-primary: 'Kanit', sans-serif;
-    --ff-secondary: 'Anton', sans-serif;;
+  --ff-primary: 'Kanit', sans-serif;
+  --ff-secondary: 'Anton', sans-serif;;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
+  --fw-reg: 300;
+  --fw-bold: 900;
 
-    --first-color: #1B2430;
-    --second-color: #51557E;
-    --third-color: #816797;
-    --text-color: #D6D5A8;
+  --first-color: #1B2430;
+  --second-color: #51557E;
+  --third-color: #816797;
+  --text-color: #D6D5A8;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
 }
 
 *, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -45,14 +45,12 @@
 }
 
 body{
-  background: rgb(27,36,48);
-  background: linear-gradient(90deg, rgba(27,36,48,1) 0%, rgba(81,85,126,1) 35%, rgba(129,103,151,1) 100%);
-  color: var(--text-color);
+  color: black;
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  text-shadow: 3px 3px 5px #000000;
+  letter-spacing: 2px;
 }
 
 img{
@@ -67,6 +65,7 @@ h1, h2, h3{
 
 h1{
   font-size: var(--fs-h1);
+  font-style: italic;
 }
 
 h2{
@@ -94,6 +93,7 @@ header{
 }
 
 .header__theme{
+  color: var(--text-color);
   font-weight: var(--fw-bold);
   text-shadow: 3px 3px 5px #000000;
 }
@@ -102,6 +102,33 @@ header{
   color: var(--third-color);
   font-family: var(--ff-secondary);
   font-weight: var(--fw-reg);
+}
+
+.button{
+  margin-top: 1rem;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.button1{
+  color: white;
+  border: 3px solid white;
+  background-image: -webkit-linear-gradient(30deg,  black, 50%, transparent 50%);
+  background-image: linear-gradient(30deg, black, 50%, transparent 50%);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+.button1:hover{
+  background-position: 0%;
 }
 
 /* about */
@@ -113,7 +140,6 @@ header{
   width: 75%;
   margin: 0 auto;
   padding: 5rem 0;
-  text-shadow: 3px 3px 5px #000000;
 }
 
 .who{
@@ -129,7 +155,6 @@ header{
 .comp{
   max-width: 100%;
   height: auto;
-  border-radius: 3rem;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -137,11 +162,6 @@ header{
   padding: 1.5rem;
   flex: 1;
 } 
-
-#first{
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  border-radius: 3rem;
-}
 
 /* experience */
 
@@ -208,8 +228,6 @@ header{
 }
 
 .container .card .content .content__box h3 {
-	color: #fff;
-	letter-spacing: 2px;
 	font-weight: 500;
 	font-size: var(--fs-body);
 	text-align: center;
@@ -229,6 +247,7 @@ header{
 	transform: translateY(40px);
 	transition: 0.5s;
 	opacity: 0;
+  font-size: 0.75em;
 }
 
 .container .card:hover .sci {
@@ -238,7 +257,11 @@ header{
 
 /* skills */
 
-
+#skills{
+  background-color: white;
+  width: 100%;
+  height: 800px;
+}
 
 /* media */
 
