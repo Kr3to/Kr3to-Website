@@ -128,7 +128,8 @@ header{
 
 .comp{
   max-width: 100%;
-  border-radius: 5rem;
+  height: auto;
+  border-radius: 3rem;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
@@ -136,6 +137,11 @@ header{
   padding: 1.5rem;
   flex: 1;
 } 
+
+#first{
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 3rem;
+}
 
 /* experience */
 
@@ -230,6 +236,10 @@ header{
 	opacity: 1;
 }
 
+/* skills */
+
+
+
 /* media */
 
 @media all and (max-width: 768px){
@@ -242,7 +252,8 @@ header{
   }
   
   header{
-    top: 50%;
+    padding: 10rem 1rem;
+    background-position: bottom;
   }
 
   .header__theme{
@@ -251,6 +262,7 @@ header{
   }
 
   #about{
+    width: 95%;
     display: block;
     padding: 0 1rem;
   }
@@ -285,6 +297,7 @@ header{
   
   .container .card .sci {
     transform: none;
+    font-size: 0.8em;
     opacity: 1;
     bottom: 50px;
     margin: 0 6px;
