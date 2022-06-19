@@ -119,12 +119,11 @@ header{
 .button1{
   color: white;
   border: 3px solid white;
-  background-image: -webkit-linear-gradient(30deg,  black, 50%, transparent 50%);
-  background-image: linear-gradient(30deg, black, 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(30deg,  #816797, 50%, transparent 50%);
+  background-image: linear-gradient(30deg, #816797, 50%, transparent 50%);
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 100%;
-  -webkit-transition: 400ms ease-in-out;
   transition: 400ms ease-in-out;
 }
 .button1:hover{
@@ -143,10 +142,11 @@ header{
 }
 
 .who{
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .who__text{
+  padding: 1rem;
   font-size: 1.25vw;
   line-height: 1.8;
   text-align: left
@@ -171,7 +171,7 @@ header{
 }
 
 .experience__title{
-  padding: 1rem;
+  padding-top: 2rem;
 }
 
 .container {
@@ -258,9 +258,178 @@ header{
 /* skills */
 
 #skills{
-  background-color: white;
+  background-color: var(--third-color);
   width: 100%;
-  height: 800px;
+  padding: 3rem 0;
+}
+
+.skills__title{
+  color: var(--text-color);
+  text-align: center;
+}
+
+.skills__box{
+  font-size: 20px;
+  width: 70%;
+  height: auto;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.skills__bar{
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background-color: var(--second-color);
+  margin: 20px auto;
+  border-radius: 1rem;
+}
+
+#skills__html{
+  width: 99%;
+  animation: animate-html 5s;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+@keyframes animate-html{
+  from {
+  width: 10px;
+}
+to {
+  width: 99%
+}
+}
+
+#skills__css{
+  animation: animate-css 5s;
+  width: 95%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+@keyframes animate-css{
+  from {
+  width: 10px;
+}
+to {
+  width: 95%
+}
+}
+
+#skills__js{
+  animation: animate-js 5s;
+  width: 81%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+@keyframes animate-js{
+  from {
+  width: 10px;
+}
+to {
+  width: 81%
+}
+}
+
+#skills__ts{
+  animation: animate-ts 5s;
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+@keyframes animate-ts{
+  from {
+  width: 10px;
+}
+to {
+  width: 80%
+}
+}
+
+#skills__react {
+  animation: animate-react 5s;
+  width: 75%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+@keyframes animate-react{
+  from {
+  width: 10px;
+}
+to {
+  width: 75%
+}
+}
+
+#skills__php{
+  animation: animate-php 5s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+@keyframes animate-php{
+  from{
+  width: 10px;
+}
+  to{
+  width: 70%
+}
+}
+
+#skills__sql{
+  animation: animate-sql 5s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 1rem;
+}
+
+@keyframes animate-sql{
+  from{
+  width: 10px;
+}
+  to{
+  width: 70%
+}
+}
+
+.skills__area{
+  float: left;
+  position: absolute;
+  margin: 0.75rem 1rem;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.skills__percent{
+  position: relative;
+  padding-right: 15px;
+  margin: 0.75rem 0;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 /* media */
@@ -294,7 +463,6 @@ header{
   }
 
   .who__text{
-    text-align: justify;
     font-size: var(--fs-body);
   }
 
@@ -327,6 +495,10 @@ header{
   
   .container .card:hover .sci {
     transform: none;
+  }
+
+  .skills__box{
+    padding: 0;
   }
 
 }
