@@ -79,7 +79,7 @@ h3{
 /* header */
 
 header{
-  background-image: url("main.jpg");
+  background-image: url("images/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -147,7 +147,7 @@ header{
 
 .who__text{
   padding: 1rem;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   line-height: 1.8;
   text-align: left
 }
@@ -432,6 +432,32 @@ to {
   font-size: 18px;
 }
 
+/* footer */
+
+footer{
+  background-color: #51557E;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.footer__text{
+  color: white;
+  font-weight: var(--fw-reg);
+}
+
+.footer__images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0 0 0;
+}
+
+.footer__img{
+  width: 50px;
+  margin: 0 0.5rem;
+}
+
 /* media */
 
 @media all and (max-width: 768px){
@@ -455,7 +481,7 @@ to {
   #about{
     width: 100%;
     display: block;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .who{
