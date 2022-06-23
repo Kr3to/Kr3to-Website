@@ -7,22 +7,18 @@
     <meta name="author" content="Mateusz Kręt">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Anton&display=swap" rel="stylesheet">
-
     <title>Hello There!</title>
 </head>
 <body>
     
-    <header>
+    <header id="header">
 
         <h1 class="header__theme">Hi! I'm <span class="mateusz">Mateusz</span>.<br>An aspiring Front End Developer.</h1>
-        
         <a href="#about" class="button button1">Learn more!</a>
 
     </header>
@@ -37,7 +33,7 @@
 
         </div>
           
-        <div class="about__content">
+        <div class="about__content" id="second">
 
             <img src="images/section.jpg" alt="Coding" class="comp">
 
@@ -61,7 +57,7 @@
 				</div>
 				<p class="sci">Helping other employees <br>
                     Providing technical help for Google LLC
-                    </p>
+                </p>
 			</div>
 			<div class="card">
 				<div class="content">
@@ -74,7 +70,7 @@
 				</div>
 				<p class="sci">Creating websites using Wordpress<br>
                     Designing blog content
-                    </p>
+                </p>
 			</div>
 			<div class="card">
 				<div class="content">
@@ -86,7 +82,7 @@
 					</div>
 				</div>
 				<p class="sci">Building computers from scratch<br>
-                    Diagnosing hardware and fixing it</p>
+                Diagnosing hardware and fixing it</p>
 			</div>
 		</div>
 
@@ -99,54 +95,58 @@
         <div class="skills__box">
             <div class="skills__bar">
               <div id="skills__html">
-                <span class="skills__area ">HTML</span>
-                <span class="skills__percent">99%</span>
+                    <span class="skills__area ">HTML</span>
+                    <span class="skills__percent">99%</span>
               </div>
             </div>
              
             <div class="skills__bar">
               <div id="skills__css">
-                <span class="skills__area ">CSS</span>
-                <span class="skills__percent">95%</span>
+                    <span class="skills__area ">CSS</span>
+                    <span class="skills__percent">95%</span>
               </div>
             </div>
            
             <div class="skills__bar">
               <div id="skills__js">
-                <span class="skills__area ">JavaScript</span>
-                <span class="skills__percent">81%</span>
+                    <span class="skills__area ">JavaScript</span>
+                    <span class="skills__percent">81%</span>
               </div>
             </div>
              
             <div class="skills__bar">
               <div id="skills__ts">
-                <span class="skills__area ">TypeScript</span>
-                <span class="skills__percent">80%</span>
+                    <span class="skills__area ">TypeScript</span>
+                    <span class="skills__percent">80%</span>
               </div>
             </div>
               
-              <div class="skills__bar">
+            <div class="skills__bar">
               <div id="skills__react">
-                <span class="skills__area ">React </span>
-                <span class="skills__percent">75%</span>
+                    <span class="skills__area ">React </span>
+                    <span class="skills__percent">75%</span>
               </div>
             </div>
              
-              <div class="skills__bar">
+            <div class="skills__bar">
               <div id="skills__php">
-                <span class="skills__area ">PHP </span>
-                <span class="skills__percent">70%</span>
+                    <span class="skills__area ">PHP </span>
+                    <span class="skills__percent">70%</span>
               </div>
             </div>
 
             <div class="skills__bar">
                 <div id="skills__sql">
-                  <span class="skills__area ">SQL </span>
-                  <span class="skills__percent">70%</span>
+                    <span class="skills__area ">SQL </span>
+                    <span class="skills__percent">70%</span>
                 </div>
-              </div>
+            </div>
               
         </div>
+
+    </section>
+
+    <section id="more">
 
     </section>
 
@@ -155,13 +155,16 @@
         <h3 class="footer__text"><i>Don't forget to visit my other stuff!</i></h3>
 
         <div class="footer__images">
+
         <a href="https://github.com/Kr3to"><img src="images/github.png" alt="github" class="footer__img"></a>
         <a href="https://www.linkedin.com/in/mateusz-kr%C4%99t-6680b5238/"><img src="images/linkedin.png" alt="linkedin" class="footer__img"></a>
         <a href="https://www.facebook.com/profile.php?id=100010262888792"><img src="images/facebook.png" alt="facebook" class="footer__img"></a>
+
         </div>
 
-    </footer>
+        <a href="#header" class="button button1">Go back!</a>
 
+    </footer>
 
 </body>
 </html>

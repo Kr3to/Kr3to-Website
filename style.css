@@ -2,15 +2,12 @@
 :root {
   --ff-primary: 'Kanit', sans-serif;
   --ff-secondary: 'Anton', sans-serif;;
-
   --fw-reg: 300;
   --fw-bold: 900;
-
   --first-color: #1B2430;
   --second-color: #51557E;
   --third-color: #816797;
   --text-color: #D6D5A8;
-
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -22,21 +19,21 @@
   margin: 0;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   box-shadow: inset 0 0 5px black; 
   border-radius: 10px;
 }
  
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background:  var(--second-color);
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover{
   background: var(--third-color);
 }
 
@@ -46,7 +43,6 @@
 
 body{
   color: black;
-  margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
@@ -136,7 +132,7 @@ header{
   display: flex;
   align-items: center;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   padding: 5rem 0;
 }
@@ -147,7 +143,7 @@ header{
 
 .who__text{
   padding: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   line-height: 1.8;
   text-align: left
 }
@@ -174,7 +170,7 @@ header{
   padding-top: 2rem;
 }
 
-.container {
+.container{
 	z-index: 1;
   padding: 3rem;
 	display: flex;
@@ -184,7 +180,7 @@ header{
   margin-bottom: 2rem;
 }
 
-.container .card {
+.container .card{
 	position: relative;
 	width: 300px;
 	height: 400px;
@@ -198,7 +194,7 @@ header{
 	backdrop-filter: blur(10px);
 }
 
-.container .card .content {
+.container .card .content{
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -207,18 +203,18 @@ header{
 	transition: 0.5s;
 }
 
-.container .card:hover .content {
+.container .card:hover .content{
 	transform: translateY(-20px);
 }
 
-.container .card .content .image {
+.container .card .content .image{
 	position: relative;
 	width: 150px;
 	height: 150px;
 	overflow: hidden;
 }
 
-.container .card .content .image img {
+.container .card .content .image img{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -227,7 +223,7 @@ header{
 	object-fit: cover;
 }
 
-.container .card .content .content__box h3 {
+.container .card .content .content__box h3{
 	font-weight: 500;
 	font-size: var(--fs-body);
 	text-align: center;
@@ -235,11 +231,11 @@ header{
 	line-height: 1.1em;
 }
 
-.container .card .content .content__box h3 span {
+.container .card .content .content__box h3 span{
 	font-size: var(--fs-body);
 }
 
-.container .card .sci {
+.container .card .sci{
 	position: absolute;
 	bottom: 50px;
 	display: flex;
@@ -250,7 +246,7 @@ header{
   font-size: 0.75em;
 }
 
-.container .card:hover .sci {
+.container .card:hover .sci{
 	transform: translateY(5px);
 	opacity: 1;
 }
@@ -360,7 +356,7 @@ to {
 }
 }
 
-#skills__react {
+#skills__react{
   animation: animate-react 5s;
   width: 75%;
   height: 50px;
@@ -432,12 +428,16 @@ to {
   font-size: 18px;
 }
 
+/* more */
+
+
+
 /* footer */
 
 footer{
   background-color: #51557E;
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .footer__text{
@@ -450,7 +450,7 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0 0 0;
+  padding: 1.5rem 0 0.5rem 0;
 }
 
 .footer__img{
@@ -485,33 +485,36 @@ footer{
   }
 
   .who{
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .who__text{
     font-size: var(--fs-body);
   }
 
-  .experience__title{
-    margin-top: 1rem;
-    font-size: var(--fs-h2);
+  #second{
+    display: none;
   }
 
-  .container .card {
+  .experience__title{
+    font-size: 3rem;
+  }
+
+  .container .card{
     backdrop-filter: none;
   }
   
-  .container .card .content {
+  .container .card .content{
     transition: none;
     margin: 0 auto;
     padding-bottom: 6rem;
   }
   
-  .container .card:hover .content {
+  .container .card:hover .content{
     transform: none;
   }
   
-  .container .card .sci {
+  .container .card .sci{
     transform: none;
     font-size: 0.8em;
     opacity: 1;
@@ -519,16 +522,21 @@ footer{
     margin: 0 6px;
   }
   
-  .container .card:hover .sci {
+  .container .card:hover .sci{
     transform: none;
   }
 
   .skills__title{
-    font-size: var(--fs-h2);
+    font-size: 3rem;
   }
 
   .skills__box{
     padding: 0;
+    width: 80%;
+  }
+
+  .footer__text{
+    font-size: var(--fs-body);
   }
 
 }
