@@ -17,7 +17,7 @@
 *, *::before, *::after{
   box-sizing: border-box;
   margin: 0;
-    outline: 1px solid limegreen !important;  
+  /* outline: 1px solid limegreen !important;  */
 }
 
 ::-webkit-scrollbar{
