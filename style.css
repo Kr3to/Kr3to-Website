@@ -17,7 +17,7 @@
 *, *::before, *::after{
   box-sizing: border-box;
   margin: 0;
-  /*  outline: 1px solid limegreen !important;  */
+    outline: 1px solid limegreen !important;  
 }
 
 ::-webkit-scrollbar{
@@ -458,13 +458,12 @@ to {
   gap: 1rem;
   justify-content: center;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   background-color: var(--first-color);
 }
 
 .more__content{
-  width: 33%;
-  height: 700px;
+  width: 500px;
   padding: 1rem;
   font-style: italic;
 } 
@@ -473,8 +472,6 @@ to {
   color: var(--text-color);
   text-align: center;
 }
-
-
 
 /* footer */
 
@@ -587,6 +584,10 @@ footer{
   .footer__text{
     font-size: var(--fs-body);
   }
+
+  .more__title{
+    font-size: 3rem;
+  } 
 
 }
 
