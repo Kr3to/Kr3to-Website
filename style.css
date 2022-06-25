@@ -517,8 +517,6 @@ footer{
   
   header{
     padding: 10rem 1rem;
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   .header__theme{
