@@ -455,22 +455,29 @@ to {
 #more{
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 5rem;
   justify-content: center;
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 5rem 3rem;
   background-color: var(--first-color);
 }
 
 .more__content{
   width: 500px;
   padding: 1rem;
-  font-style: italic;
 } 
 
 .more__title{
   color: var(--text-color);
   text-align: center;
+  font-style: italic;
+}
+
+.more__paragraph{
+  padding: 1.5rem 0;
+  color: white;
+  font-size: var(--fs-h3);
+  text-align: left;
 }
 
 /* footer */
@@ -588,6 +595,11 @@ footer{
   .more__title{
     font-size: 3rem;
   } 
+
+  .more__paragraph{
+    text-align: justify;
+    padding: 2.5rem 0;
+  }
 
 }
 
