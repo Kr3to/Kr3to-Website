@@ -1,7 +1,7 @@
 /* basic stuff */
 :root {
   --ff-primary: 'Kanit', sans-serif;
-  --ff-secondary: 'Anton', sans-serif;;
+  --ff-secondary: 'Anton', sans-serif;
   --fw-reg: 300;
   --fw-bold: 900;
   --first-color: #1B2430;
@@ -254,6 +254,10 @@ header{
 	transform: translateY(5px);
 	opacity: 1;
 }
+
+/* education */
+
+
 
 /* skills */
 
