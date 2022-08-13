@@ -541,11 +541,11 @@ footer{
     padding: 0;
   }
 
-  .who{
+  .about__who{
     font-size: 3rem;
   }
 
-  .who__text{
+  .about__text{
     font-size: var(--fs-body);
   }
 
@@ -601,19 +601,23 @@ footer{
   } 
 
   .more__paragraph{
-    text-align: justify;
+    text-align: left;
     padding: 2.5rem 0;
   }
 
 }
 
 @media screen and (min-width:768px) and (max-width:1024px){
+  .header__theme{
+    margin: 0 .5rem;
+  }
+  
   #about{
     display: block;
     padding: 0 1rem;
-  }
+  }  
 
-  .who__text{
+  .about__text{
     font-size: 1em;
   }
 
